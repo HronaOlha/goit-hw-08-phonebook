@@ -7,13 +7,14 @@ import { refreshUser } from 'redux/auth/operations';
 import { selectIsRefreshing } from 'redux/auth/selectors';
 import { RestrictedRoute } from 'components/RestrictedRoute';
 import { PrivateRoute } from 'components/PrivateRoute';
-import NotFound from 'pages/NotFound';
 import { ToastContainer } from 'react-toastify';
+// import NotFound from 'pages/NotFound/NotFound';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Register = lazy(() => import('../pages/Register'));
 const LogIn = lazy(() => import('../pages/LogIn'));
 const Contacts = lazy(() => import('../pages/Contacts'));
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 const App = () => {
   const dispatch = useDispatch();
